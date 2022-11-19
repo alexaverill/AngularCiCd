@@ -10,14 +10,13 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Navigate
-        run: cd cicdApp/
       - name: Use Node 14
         uses: actions/setup-node@v1
         with:
             node-vesrion: '14.x'
       - name: Install Dependencies
-        run: npm install 
+        run: cd cicdApp/ && npm install 
       - name: Build
-        run: npm run build
+        run: cd cicdApp/ && npm install 
        
+
