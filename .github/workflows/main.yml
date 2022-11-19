@@ -10,6 +10,8 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Navigate
+        run: cd cicdApp/
       - name: Use Node 14
         uses: actions/setup-node@v1
         with:
@@ -19,4 +21,3 @@ jobs:
       - name: Build
         run: npm run build
        
-
