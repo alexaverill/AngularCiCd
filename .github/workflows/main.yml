@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependencies
         run: cd cicdApp/ && npm install 
       - name: Build
-        run: cd cicdApp/ && npm build:release
+        run: cd cicdApp/ && npm run build:release
       - name: Deploy
         if: success()
         uses: JamesIves/github-pages-deploy-action@releases/v3
