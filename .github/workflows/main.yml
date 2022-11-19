@@ -22,7 +22,7 @@ jobs:
         if: success()
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with: 
-          GITHUB_TOKEN: ${{secrest.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           FOLDER: dist
 
        
