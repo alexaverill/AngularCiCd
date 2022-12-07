@@ -1,0 +1,6 @@
+<h1 *ngIf="Title; else noTitle">Title: {{Title}}</h1>
+<ng-template #noTitle>
+    <h1>Wooo</h1>
+</ng-template>
+<p *ngIf="text">Text: {{text}}</p>
+<p *ngIf="Description">Description: {{Description}}</p>
